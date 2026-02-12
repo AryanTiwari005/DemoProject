@@ -1,19 +1,20 @@
-import './Header.css';
-export default function Header(props) {
+// import './Header.css';
+// export default function Header({title,year}) {
 
-    return (
-        <div>
+//     return (
+//         <div>
             
-            <h1>{props.title}</h1>
-            <nav>
-                <a href="/">Home </a> 
-                <a href="/about">About </a>  
-                <a href="/contact">Contact</a>
-            </nav>
+//             <h1>{title}</h1>
+//             <h1>{year}</h1>
+//             <nav>
+//                 <a href="/">Home </a> 
+//                 <a href="/about">About </a>  
+//                 <a href="/contact">Contact</a>
+//             </nav>
             
     
-        </div>
-    );
+//         </div>
+//     );
 
         
-}
+// }

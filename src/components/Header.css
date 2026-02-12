@@ -1,5 +1,5 @@
 div{
-    background: linear-gradient(120deg, rgb(193, 91, 12) , rgb(17, 202, 227));
+    background: linear-gradient(100%, rgb(193, 91, 12) , rgb(17, 202, 227));
     border-radius: 2px solid white;
     padding: 20px;
 }
