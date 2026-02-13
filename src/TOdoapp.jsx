@@ -1,4 +1,7 @@
 export default function TodoApp() {
+
+    const [tasks, setTasks] = useState("");
+    const [taskList, setTaskList] = useState([]);
     function handleSubmit(e){
         e.preventDefault();
         const input = e.target.elements.task.value;
@@ -8,18 +11,26 @@ export default function TodoApp() {
             return;
         }
         const li = document.createElement("li");
-        li.textContent = input;
-        hii.appendChild(li);
+       li.innerHTML = `
+        <span>${input}</span>
+        <button class="deleteBtn">Delete</button>` ;
+
+        document.getElementById("taskList").appendChild(li);
         e.target.reset();
         
+    }
+     function handleDelete(e) {
+        if (e.target.classList.contains("deleteBtn")) {
+            e.target.parentElement.remove(); 
+        }
     }
     return(
         <div>
             <form onSubmit={handleSubmit}>  
                 <input type="text" name="task" placeholder="Write something dammit!!!" />
-                <input type="submit" value="Add Task" />
+                <button type="submit">Add Task</button>
             </form>
-            <ul id="taskList" onClick={handleSubmit}>
+            <ul id="taskList" onClick={handleDelete}>
             
             </ul>
             

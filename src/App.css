@@ -25,6 +25,7 @@ h1 {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  
 }
 
 input[type="text"] {
@@ -37,6 +38,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   border-color: #4e73df;
+  
 }
 
 button {
@@ -55,7 +57,7 @@ button:hover {
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 
 li {
@@ -64,8 +66,10 @@ li {
   margin-bottom: 8px;
   border-radius: 6px;
   transition: 0.2s;
+
 }
 
 li:hover {
   background: #e2e6f5;
 }
+
